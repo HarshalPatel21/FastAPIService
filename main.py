@@ -40,15 +40,3 @@ async def ask_question(request: QuestionRequest):
         raise HTTPException(status_code=400, detail="No PDF content available. Please upload a PDF first.")
     answer = answer_question(extracted_text, request.question)
     return {"answer": answer}
-
-# async def send_bot_responses(websocket: WebSocket, context: str, question: str):
-#     async for part in generate_bot_response(context, question):
-#         await websocket.send_text(part)
-
-# @app.websocket("/bot")
-# async def bot_connection(websocket: WebSocket):
-#     await websocket.accept()
-#     while True:
-#         data = await websocket.receive_text()
-#         question = data.strip()
-#         await send_bot_responses(websocket=websocket,context= extracted_text, question=question)
