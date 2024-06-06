@@ -1,4 +1,4 @@
-from fastapi import FastAPI, File, UploadFile, HTTPException , WebSocket
+from fastapi import FastAPI, File, UploadFile, HTTPException 
 from pydantic import BaseModel
 from process import process_pdf, answer_question 
 from fastapi.middleware.cors import CORSMiddleware
