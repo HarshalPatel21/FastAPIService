@@ -5,11 +5,12 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
+# for COROS
 origins = [
     "http://ai-planet:65519",  
     "http://ai-planet:65520",  
 ]
-
+# Allow access
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
