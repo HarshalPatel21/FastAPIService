@@ -1,5 +1,5 @@
 ## FastAPI
-This is backend for application for frontend please refer to https://github.com/HarshalPatel21/ai-planet-webapp.git
+This is backend for application, for frontend please refer to https://github.com/HarshalPatel21/ai-planet-webapp.git
 
 
 ### Prerequisites
